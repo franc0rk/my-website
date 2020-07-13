@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex items-center justify-between flex-wrap p-6"
+    class="flex items-center justify-between flex-wrap p-3"
     :class="{ 'bg-gray-900': darkMode, 'bg-green-500': !darkMode }"
   >
     <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -45,10 +45,11 @@
         </a>
         <a
           href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white"
+          class="block ml-4 mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white"
           @click="darkMode = !darkMode"
         >
-          {{ darkMode ? 'Encender luces' : 'Apagar luces' }}
+          <i v-if="darkMode" class="fa fa-sun-o"></i>
+          <i v-else class="fa fa-moon-o"></i>
         </a>
       </div>
     </div>
