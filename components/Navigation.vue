@@ -25,7 +25,7 @@
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow"></div>
-      <div v-show="true">
+      <div v-show="openedMenu">
         <a
           href="#responsive-header"
           class="block text-center mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
