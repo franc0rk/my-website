@@ -4,13 +4,14 @@
     :class="{ 'bg-gray-900': darkMode, 'bg-green-500': !darkMode }"
   >
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <span class="font-semibold text-xl tracking-tight">
-        franc0rk
+      <span class="text-white font-semibold text-xl tracking-tight">
+        <a class="focus:text-white" href="/">franc0rk</a>
       </span>
     </div>
     <div class="block lg:hidden">
       <button
         class="flex items-center px-3 py-2 border rounded text-green-200 border-green-400 hover:text-white hover:border-white"
+        @click="openedMenu = !openedMenu"
       >
         <svg
           class="fill-current h-3 w-3"
@@ -24,28 +25,28 @@
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow"></div>
-      <div>
+      <div v-show="true">
         <a
           href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
+          class="block text-center mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
         >
           Blog
         </a>
         <a
           href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
+          class="block text-center mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
         >
           Resume
         </a>
         <a
           href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white"
+          class="block text-center mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white"
         >
           Portfolio
         </a>
         <a
           href="#responsive-header"
-          class="block ml-4 mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white"
+          class="block text-center ml-4 mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white"
           @click="darkMode = !darkMode"
         >
           <i v-if="darkMode" class="fa fa-sun-o"></i>
@@ -60,6 +61,7 @@ export default {
   name: 'Navigation',
   data: () => ({
     darkMode: false,
+    openedMenu: false,
   }),
 }
 </script>
