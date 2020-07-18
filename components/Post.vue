@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded bg-white shadow-lg py-12 px-16 my-6">
+  <div class="rounded shadow-lg py-12 px-16 my-6" :class="layoutBgClasses">
     <div v-if="latest" class="relative">
       <div
         class="transform -rotate-45 bg-green-700 text-green-100 absolute -top-1 -left-5 font-semibold text-center px-6 py-1"
@@ -8,23 +8,33 @@
         Latest post
       </div>
     </div>
-    <h3 class="text-3xl text-gray-800" :class="{ relative: latest }">
+    <h3 class="text-3xl" :class="{ ...layoutTextClasses, relative: latest }">
       {{ post.title }}
     </h3>
-    <p class="text-gray-900 my-6 text-justify" :class="{ relative: latest }">
+    <p
+      class="my-6 text-justify"
+      :class="{ ...layoutTextClasses, relative: latest }"
+    >
       {{ post.body }}
     </p>
-    <p class="text-gray-900 my-6 text-justify" :class="{ relative: latest }">
+    <p
+      class="my-6 text-justify"
+      :class="{ ...layoutTextClasses, relative: latest }"
+    >
       {{ post.body }}
     </p>
-    <p class="text-gray-900 my-6 text-justify" :class="{ relative: latest }">
+    <p
+      class="my-6 text-justify"
+      :class="{ ...layoutTextClasses, relative: latest }"
+    >
       {{ post.body }}
     </p>
     <p>
       <a
         v-if="readMore"
         :href="'/post' + post.id"
-        class="block w-full md:w-1/6 text-center bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded"
+        class="block w-full md:w-1/6 text-center font-semibold py-2 px-4 border rounded bg-transparent hover:border-transparent"
+        :class="layoutBtnClasses"
       >
         Read more
       </a>
@@ -46,6 +56,32 @@ export default {
     latest: {
       type: Boolean,
       default: false,
+    },
+  },
+  computed: {
+    layoutBgClasses() {
+      return {
+        'bg-white': this.$root.layoutName === 'default',
+        'bg-gray-800': this.$root.layoutName === 'dark',
+      }
+    },
+    layoutTextClasses() {
+      return {
+        'text-white': this.$root.layoutName === 'dark',
+        'text-gray-900': this.$root.layoutName === 'default',
+      }
+    },
+    layoutBtnClasses() {
+      return {
+        'border-green-500': this.$root.layoutName === 'default',
+        'hover:bg-green-500': this.$root.layoutName === 'default',
+        'hover:text-white': this.$root.layoutName === 'default',
+        'text-green-700': this.$root.layoutName === 'default',
+        'border-white': this.$root.layoutName === 'dark',
+        'hover:bg-white': this.$root.layoutName === 'dark',
+        'hover:text-green-500': this.$root.layoutName === 'dark',
+        'text-white': this.$root.layoutName === 'dark',
+      }
     },
   },
 }

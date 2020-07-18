@@ -1,7 +1,10 @@
 <template>
   <nav
     class="flex items-center justify-between flex-wrap p-3"
-    :class="{ 'bg-gray-900': darkMode, 'bg-green-500': !darkMode }"
+    :class="{
+      'bg-gray-900': $root.layoutName === 'dark',
+      'bg-green-500': $root.layoutName !== 'dark',
+    }"
   >
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <span class="text-white font-semibold text-xl tracking-tight">
@@ -25,31 +28,35 @@
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow"></div>
-      <div v-show="openedMenu">
+      <div>
         <a
           href="#responsive-header"
-          class="block text-center mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
+          class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
+          :class="layoutLinkClasses"
         >
           Blog
         </a>
         <a
           href="#responsive-header"
-          class="block text-center mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
+          class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
+          :class="layoutLinkClasses"
         >
           Resume
         </a>
         <a
           href="#responsive-header"
-          class="block text-center mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white"
+          class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
+          :class="layoutLinkClasses"
         >
           Portfolio
         </a>
         <a
           href="#responsive-header"
-          class="block text-center ml-4 mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white"
-          @click="darkMode = !darkMode"
+          class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-4"
+          :class="layoutLinkClasses"
+          @click="toggleDarkMode"
         >
-          <i v-if="darkMode" class="fa fa-sun-o"></i>
+          <i v-if="$root.layoutName === 'dark'" class="fa fa-sun-o"></i>
           <i v-else class="fa fa-moon-o"></i>
         </a>
       </div>
@@ -60,8 +67,22 @@
 export default {
   name: 'Navigation',
   data: () => ({
-    darkMode: false,
     openedMenu: false,
   }),
+  computed: {
+    layoutLinkClasses() {
+      return {
+        'text-green-200': this.$root.layoutName === 'default',
+        'text-gray-200': this.$root.layoutName === 'dark',
+      }
+    },
+  },
+  methods: {
+    toggleDarkMode() {
+      const layout = this.$root.layoutName
+      if (layout === 'dark') this.$nuxt.setLayout('default')
+      else this.$nuxt.setLayout('dark')
+    },
+  },
 }
 </script>
