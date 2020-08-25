@@ -30,31 +30,31 @@
       <div class="text-sm lg:flex-grow"></div>
       <div>
         <a
-          href="#responsive-header"
+          href="#"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
           :class="layoutLinkClasses"
         >
           Blog
         </a>
         <a
-          href="#responsive-header"
+          href="#"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
           :class="layoutLinkClasses"
         >
           Resume
         </a>
         <a
-          href="#responsive-header"
+          href="/portfolio"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
           :class="layoutLinkClasses"
         >
           Portfolio
         </a>
         <a
-          href="#responsive-header"
+          href="#"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-4"
           :class="layoutLinkClasses"
-          @click="toggleDarkMode"
+          @click.prevent="toggleDarkMode"
         >
           <i v-if="$root.layoutName === 'dark'" class="fa fa-sun-o"></i>
           <i v-else class="fa fa-moon-o"></i>
@@ -77,11 +77,20 @@ export default {
       }
     },
   },
+  mounted() {
+    const layout = localStorage.getItem('layout')
+    this.$nuxt.setLayout(layout)
+  },
   methods: {
     toggleDarkMode() {
       const layout = this.$root.layoutName
-      if (layout === 'dark') this.$nuxt.setLayout('default')
-      else this.$nuxt.setLayout('dark')
+      if (layout === 'dark') {
+        this.$nuxt.setLayout('default')
+        localStorage.setItem('layout', 'default')
+      } else {
+        this.$nuxt.setLayout('dark')
+        localStorage.setItem('layout', 'dark')
+      }
     },
   },
 }
