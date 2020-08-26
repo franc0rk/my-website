@@ -49,7 +49,7 @@ export default {
         id: 1,
         name: 'JuegosAdaptativos',
         description:
-          '<p>This is a game recommendation system which takes into account users likes and performs a search based on diffuse logic after filling a small survey about videogames they could like.</p><br><p>Besides, it also allows users to have their own profiles and to vote recommended videogames in order to improve the searching algorithm. That way, the results are improved so that the recommendations are better.</p>',
+          '<p>This is a game recommendation system which takes into account users likes and performs a search based on diffuse logic after filling a small survey about videogames they could like.</p><br><p class="hidden lg:block">Besides, it also allows users to have their own profiles and to vote recommended videogames in order to improve the searching algorithm. That way, the results are improved so that the recommendations are better.</p>',
         thumbnail: '/project1.jpg',
         tags: ['Laravel', 'Bootstrap'],
         url: '',
@@ -77,7 +77,7 @@ export default {
         id: 3,
         name: 'Eventicket',
         description:
-          '<p>Eventicket is a system which allows fans to assist to their favorite events. Customers are able not only to look for events, reserve and buy tickets but also to see their event history and get notified when a new event is coming.</p><br><p>This system is also for managing reservations since it has an administration panel for people who have to handle the events ticket sales. It has an easy-use interface to manage users, events, reservations, and settings.</p>',
+          '<p>Eventicket is a system which allows fans to assist to their favorite events. Customers are able not only to look for events, reserve and buy tickets but also to see their event history and get notified when a new event is coming.</p><br><p class="hidden lg:block">This system is also for managing reservations since it has an administration panel for people who have to handle the events ticket sales. It has an easy-use interface to manage users, events, reservations, and settings.</p>',
         thumbnail: '/project3.jpg',
         tags: ['Laravel', 'Bootstrap'],
         url: 'https://github.com/franc0rk/eventicket',
@@ -91,7 +91,7 @@ export default {
         id: 4,
         name: 'Binnacle',
         description:
-          '<p>This is a hybrid (web and mobile) app that allows users to perfom audits. In <strong>Binnacle</strong>, companies create checklists for their employees that have to be filled each certain period of time depending on their needs.</p><br><p>It has many more useful features just like querying reports based on the checklists results, having an agenda for checking users tasks dates, registering action plans and a quick-look data dashboard.</p>',
+          '<p>This is a hybrid (web and mobile) app that allows users to perfom audits. In <strong>Binnacle</strong>, companies create checklists for their employees that have to be filled each certain period of time depending on their needs.</p><br><p class="hidden lg:block">It has many more useful features just like querying reports based on the checklists results, having an agenda for checking users tasks dates, registering action plans and a quick-look data dashboard.</p>',
         thumbnail: '/project4.jpg',
         tags: ['Vue', 'Quasar', 'Laravel'],
         url: 'https://app.binnacle.mx',
