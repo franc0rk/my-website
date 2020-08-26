@@ -28,7 +28,7 @@
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow"></div>
-      <div>
+      <div v-show="openedMenu">
         <a
           href="/blog"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
@@ -80,6 +80,9 @@ export default {
   mounted() {
     const layout = localStorage.getItem('layout')
     this.$nuxt.setLayout(layout)
+    if (window.innerWidth >= 1024) {
+      this.openedMenu = true
+    }
   },
   methods: {
     toggleDarkMode() {
