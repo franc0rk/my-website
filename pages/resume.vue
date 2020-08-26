@@ -15,6 +15,11 @@
       <experience-card />
       <skills-card />
     </div>
+    <div class="w-3/4"></div>
+    <div class="w-4/5"></div>
+    <div class="w-2/3"></div>
+    <div class="w-3/4"></div>
+    <div class="w-3/5"></div>
   </div>
 </template>
 <script>
