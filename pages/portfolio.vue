@@ -57,7 +57,7 @@ export default {
         id: 2,
         name: 'Ecosocial',
         description:
-          'This project consists of a both web and mobile application, which pretends to attract people for using it and worry a little bit about environment in order to promote sustainable development.<br><br>Nowadays most of people use social media and actually we do not use it for the best purposes, so <strong>Ecosocial</strong> is a good reason for dealing with a social network and make this world better.',
+          'This project consists of a both web and mobile application, which pretends to attract people for using it and worry a little bit about environment in order to promote sustainable development.<br><br><p class="hidden md:block">Nowadays most of people use social media and actually we do not use it for the best purposes, so <strong>Ecosocial</strong> is a good reason for dealing with a social network and make this world better.</p>',
         thumbnail: '/project2.jpg',
         tags: ['Vue', 'Quasar'],
         url: 'https://github.com/franc0rk/ecosocial',
