@@ -16,9 +16,11 @@
         <div class="h-48">
           <img class="mx-auto h-full" :src="project.thumbnail" />
         </div>
-        <p class="mt-4" :class="layoutTextClasses">
-          {{ project.description.substr(0, 60) + '....' }}
-        </p>
+        <p
+          class="mt-4"
+          v-html="project.description.substr(0, 64) + '...'"
+          :class="layoutTextClasses"
+        />
         <div class="flex justify-center items-center">
           <div
             v-for="tag in project.tags"
@@ -47,44 +49,57 @@ export default {
         id: 1,
         name: 'JuegosAdaptativos',
         description:
-          'Es un sistema de recomendación de videojuegos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ex esse est consequuntur, quas praesentium odit deserunt harum, iure sequi voluptatem soluta, sint inventore, fugit eveniet molestias eligendi dolore repellat.',
+          '<p>This is a game recommendation system which takes into account users likes and performs a search based on diffuse logic after filling a small survey about videogames they could like.</p><br><p>Besides, it also allows users to have their own profiles and to vote recommended videogames in order to improve the searching algorithm. That way, the results are improved so that the recommendations are better.</p>',
         thumbnail: '/project1.jpg',
         tags: ['Laravel', 'Bootstrap'],
         url: '',
-        attachments: ['/project1.jpg', '/project1.jpg', '/project1.jpg'],
+        attachments: [
+          '/project_attachments/adap1.jpg',
+          '/project_attachments/adap2.jpg',
+          '/project_attachments/adap3.jpg',
+        ],
       },
       {
         id: 2,
         name: 'Ecosocial',
         description:
-          'This project consists of a both web and mobile application, which pretends to attract people for using it and worry a little bit about environment in order to promote sustainable development.<br><br><p class="hidden md:block">Nowadays most of people use social media and actually we do not use it for the best purposes, so <strong>Ecosocial</strong> is a good reason for dealing with a social network and make this world better.</p>',
+          '<p>This project consists of a both web and mobile application, which pretends to attract people for using it and worry a little bit about environment in order to promote sustainable development.</p><br><p class="hidden md:block">Nowadays most of people use social media and actually we do not use it for the best purposes, so <strong>Ecosocial</strong> is a good reason for dealing with a social network and make this world better.</p>',
         thumbnail: '/project2.jpg',
         tags: ['Vue', 'Quasar'],
         url: 'https://github.com/franc0rk/ecosocial',
         attachments: [
-          '/project_attachments/ecosocial1.png',
-          '/project_attachments/ecosocial2.png',
-          '/project_attachments/ecosocial3.png',
+          '/project_attachments/ecosocial1.jpg',
+          '/project_attachments/ecosocial2.jpg',
+          '/project_attachments/ecosocial3.jpg',
         ],
       },
       {
         id: 3,
         name: 'Eventicket',
         description:
-          'An application to make event reservations Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ex esse est consequuntur, quas praesentium odit deserunt harum, iure sequi voluptatem soluta, sint inventore, fugit eveniet molestias eligendi dolore repellat.',
+          '<p>Eventicket is a system which allows fans to assist to their favorite events. Customers are able not only to look for events, reserve and buy tickets but also to see their event history and get notified when a new event is coming.</p><br><p>This system is also for managing reservations since it has an administration panel for people who have to handle the events ticket sales. It has an easy-use interface to manage users, events, reservations, and settings.</p>',
         thumbnail: '/project3.jpg',
         tags: ['Laravel', 'Bootstrap'],
         url: 'https://github.com/franc0rk/eventicket',
-        attachments: ['/project3.jpg', '/project3.jpg', '/project3.jpg'],
+        attachments: [
+          '/project_attachments/eventicket1.jpg',
+          '/project_attachments/eventicket2.jpg',
+          '/project_attachments/eventicket3.jpg',
+        ],
       },
       {
         id: 4,
         name: 'Binnacle',
-        description: 'A hybrid app for perfoming audits',
+        description:
+          '<p>This is a hybrid (web and mobile) app that allows users to perfom audits. In <strong>Binnacle</strong>, companies create checklists for their employees that have to be filled each certain period of time depending on their needs.</p><br><p>It has many more useful features just like querying reports based on the checklists results, having an agenda for checking users tasks dates, registering action plans and a quick-look data dashboard.</p>',
         thumbnail: '/project4.jpg',
         tags: ['Vue', 'Quasar', 'Laravel'],
         url: 'https://app.binnacle.mx',
-        attachments: ['/project4.jpg', '/project4.jpg', '/project4.jpg'],
+        attachments: [
+          '/project_attachments/binnacle1.jpg',
+          '/project_attachments/binnacle2.jpg',
+          '/project_attachments/binnacle3.jpg',
+        ],
       },
     ],
   }),
