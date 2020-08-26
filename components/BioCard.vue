@@ -7,11 +7,15 @@
     <p class="text-lg text-center text-gray-600">
       Frontend Developer
     </p>
-    <p class="text-base px-6 my-6 text-center" :class="layoutTextClasses">
+    <p
+      v-if="showDescription"
+      class="text-base px-6 my-6 text-center"
+      :class="layoutTextClasses"
+    >
       I enjoy learning about new software development technologies in order to
       apply this knowledge at professional projects.
     </p>
-    <p class="text-base text-center">
+    <p class="text-base text-center" v-if="showEmail">
       <a
         class="text-green-500"
         :class="layoutEmailClasses"
@@ -20,7 +24,7 @@
         francodeleon97@hotmail.com
       </a>
     </p>
-    <p class="text-base text-center my-3">
+    <p class="text-base text-center my-3" v-if="showContactInfo">
       <a :class="layoutLinkClasses" href="https://github.com/franc0rk">
         <i class="fa fa-github"></i>
       </a>
@@ -40,6 +44,20 @@
 <script>
 export default {
   name: 'BioCard',
+  props: {
+    showDescription: {
+      type: Boolean,
+      default: true,
+    },
+    showEmail: {
+      type: Boolean,
+      default: true,
+    },
+    showContactInfo: {
+      type: Boolean,
+      default: true,
+    },
+  },
   computed: {
     layoutBgClasses() {
       return {

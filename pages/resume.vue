@@ -1,0 +1,28 @@
+<template>
+  <div class="flex flex-wrap h-full">
+    <div class="w-full md:w-1/3 px-4">
+      <bio-card
+        :show-description="false"
+        :show-email="false"
+        :show-contact-info="false"
+      />
+      <contact-card />
+      <education-card />
+      <languages-card />
+    </div>
+    <div class="w-full md:w-2/3 px-4">
+      <about-me-card />
+      <experience-card />
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: 'ResumePage',
+  methods: {
+    print() {
+      window.print()
+    },
+  },
+}
+</script>
