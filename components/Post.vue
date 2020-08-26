@@ -11,28 +11,15 @@
     <h3 class="text-3xl" :class="{ ...layoutTextClasses, relative: latest }">
       {{ post.title }}
     </h3>
-    <p
-      class="my-6 text-justify"
+    <div
+      class="my-6 text-justify text-lg"
       :class="{ ...layoutTextClasses, relative: latest }"
-    >
-      {{ post.body }}
-    </p>
-    <p
-      class="my-6 text-justify"
-      :class="{ ...layoutTextClasses, relative: latest }"
-    >
-      {{ post.body }}
-    </p>
-    <p
-      class="my-6 text-justify"
-      :class="{ ...layoutTextClasses, relative: latest }"
-    >
-      {{ post.body }}
-    </p>
+      v-html="post.body"
+    />
     <p>
       <a
         v-if="readMore"
-        :href="'/post' + post.id"
+        :href="post.url"
         class="block w-full lg:w-1/6 text-center font-semibold py-2 px-4 border rounded bg-transparent hover:border-transparent"
         :class="layoutBtnClasses"
       >

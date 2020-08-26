@@ -1,25 +1,6 @@
 <template>
   <div class="my-6">
-    <div
-      v-for="post in posts"
-      :key="post.id"
-      class="rounded bg-white shadow-lg p-12 my-6"
-    >
-      <h3 class="text-3xl text-gray-800">
-        {{ post.title }}
-      </h3>
-      <p class="text-gray-900 h-auto my-6">
-        {{ post.body }}
-      </p>
-      <p>
-        <a
-          :href="'/post' + post.id"
-          class="block w-1/6 text-center bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded"
-        >
-          Read more
-        </a>
-      </p>
-    </div>
+    <post v-for="post in posts" :key="post.id" :post="post" read-more />
   </div>
 </template>
 <script>

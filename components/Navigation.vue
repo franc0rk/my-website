@@ -30,7 +30,7 @@
       <div class="text-sm lg:flex-grow"></div>
       <div>
         <a
-          href="#"
+          href="/blog"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
           :class="layoutLinkClasses"
         >
