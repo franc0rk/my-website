@@ -17,7 +17,7 @@
           <img class="mx-auto h-full" :src="project.thumbnail" />
         </div>
         <p class="mt-4" :class="layoutTextClasses">
-          {{ project.description.substr(0, 60) + '...' }}
+          {{ project.description.substr(0, 60) + '....' }}
         </p>
         <div class="flex justify-center items-center">
           <div
