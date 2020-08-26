@@ -17,8 +17,8 @@
           <img class="mx-auto h-full" :src="project.thumbnail" />
         </div>
         <p
-          class="mt-4"
-          v-html="project.description.substr(0, 64) + '...'"
+          class="mt-4 h-24 overflow-hidden"
+          v-html="project.description"
           :class="layoutTextClasses"
         />
         <div class="flex justify-center items-center">
