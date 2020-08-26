@@ -33,7 +33,7 @@
       <a
         v-if="readMore"
         :href="'/post' + post.id"
-        class="block w-full md:w-1/6 text-center font-semibold py-2 px-4 border rounded bg-transparent hover:border-transparent"
+        class="block w-full lg:w-1/6 text-center font-semibold py-2 px-4 border rounded bg-transparent hover:border-transparent"
         :class="layoutBtnClasses"
       >
         Read more

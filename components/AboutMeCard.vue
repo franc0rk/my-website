@@ -5,7 +5,9 @@
     </h3>
     <p class="px-6" :class="layoutTextClasses">
       I enjoy learning about new software development technologies in order to
-      apply this knowledge at professional projects.
+      apply this knowledge at professional projects. Self-taught, ability to
+      adopt different solutions to problems that may arise. Eager to acquire new
+      knowledge and face future challenges.
     </p>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="flex flex-wrap">
     <div class="w-full border-solid border" :class="layoutBorderColor">
       <div class="flex flex-wrap">
-        <div class="bg-green-500 w-4/5" :class="'w-' + progress">
+        <div class="bg-green-500" :class="'w-' + progress">
           &nbsp;
         </div>
       </div>

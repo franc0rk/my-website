@@ -22,7 +22,7 @@
           </button>
         </div>
         <div class="sm:flex sm:items-start">
-          <div class="w-full md:w-1/3">
+          <div class="w-full lg:w-1/3">
             <h3
               id="modal-headline"
               class="text-center text-lg leading-6 font-medium font-bold"
@@ -33,12 +33,12 @@
             <div class="mt-2">
               <img
                 v-if="selectedAttachment"
-                class="h-48 md:h-64 w-full"
+                class="h-48 lg:h-64 w-full"
                 :src="selectedAttachment"
               />
               <img
                 v-else
-                class="h-48 md:h-64 w-full"
+                class="h-48 lg:h-64 w-full"
                 :src="project.thumbnail"
               />
               <div class="flex justify-center items-center">
@@ -58,7 +58,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full md:w-2/3 mt-3 md:mt-12 px-3 md:px-6">
+          <div class="w-full lg:w-2/3 mt-3 lg:mt-12 px-3 lg:px-6">
             <div :class="layoutTextClasses" v-html="project.description" />
             <div class="flex justify-center items-center">
               <div

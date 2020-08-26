@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap h-full">
-    <div class="w-full md:w-1/3 px-4">
+    <div class="w-full lg:w-1/3 px-4">
       <bio-card
         :show-description="false"
         :show-email="false"
@@ -10,9 +10,10 @@
       <education-card />
       <languages-card />
     </div>
-    <div class="w-full md:w-2/3 px-4">
+    <div class="w-full lg:w-2/3 px-4">
       <about-me-card />
       <experience-card />
+      <skills-card />
     </div>
   </div>
 </template>

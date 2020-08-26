@@ -15,7 +15,7 @@
       I enjoy learning about new software development technologies in order to
       apply this knowledge at professional projects.
     </p>
-    <p class="text-base text-center" v-if="showEmail">
+    <p v-if="showEmail" class="text-base text-center">
       <a
         class="text-green-500"
         :class="layoutEmailClasses"
@@ -24,7 +24,7 @@
         francodeleon97@hotmail.com
       </a>
     </p>
-    <p class="text-base text-center my-3" v-if="showContactInfo">
+    <p v-if="showContactInfo" class="text-base text-center my-3">
       <a :class="layoutLinkClasses" href="https://github.com/franc0rk">
         <i class="fa fa-github"></i>
       </a>

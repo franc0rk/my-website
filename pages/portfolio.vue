@@ -3,7 +3,7 @@
     <div
       v-for="project in projects"
       :key="project.id"
-      class="w-full md:w-1/3 px-4 pb-6"
+      class="w-full lg:w-1/3 px-4 pb-6"
     >
       <div
         class="rounded shadow-lg p-6 text-center cursor-pointer"
@@ -18,8 +18,8 @@
         </div>
         <p
           class="mt-4 h-24 overflow-hidden"
-          v-html="project.description"
           :class="layoutTextClasses"
+          v-html="project.description"
         />
         <div class="flex justify-center items-center">
           <div
@@ -63,7 +63,7 @@ export default {
         id: 2,
         name: 'Ecosocial',
         description:
-          '<p>This project consists of a both web and mobile application, which pretends to attract people for using it and worry a little bit about environment in order to promote sustainable development.</p><br><p class="hidden md:block">Nowadays most of people use social media and actually we do not use it for the best purposes, so <strong>Ecosocial</strong> is a good reason for dealing with a social network and make this world better.</p>',
+          '<p>This project consists of a both web and mobile application, which pretends to attract people for using it and worry a little bit about environment in order to promote sustainable development.</p><br><p class="hidden lg:block">Nowadays most of people use social media and actually we do not use it for the best purposes, so <strong>Ecosocial</strong> is a good reason for dealing with a social network and make this world better.</p>',
         thumbnail: '/project2.jpg',
         tags: ['Vue', 'Quasar'],
         url: 'https://github.com/franc0rk/ecosocial',
