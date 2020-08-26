@@ -14,7 +14,7 @@ export default {
   name: 'ProgressBar',
   props: {
     progress: {
-      type: Number,
+      type: String,
       required: true,
     },
   },
