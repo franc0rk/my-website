@@ -24,20 +24,20 @@ export default {
   computed: {
     layoutBgClasses() {
       return {
-        'bg-gray-800': this.$root.layoutName === 'dark',
-        'bg-white': this.$root.layoutName === 'default',
+        'bg-gray-800': this.$store.state.layout === 'dark',
+        'bg-white': this.$store.state.layout === 'default',
       }
     },
     layoutTextClasses() {
       return {
-        'text-gray-900': this.$root.layoutName === 'default',
-        'text-white': this.$root.layoutName === 'dark',
+        'text-gray-900': this.$store.state.layout === 'default',
+        'text-white': this.$store.state.layout === 'dark',
       }
     },
     layoutLinkClasses() {
       return {
-        'hover:text-gray-800': this.$root.layoutName === 'default',
-        'hover:text-white': this.$root.layoutName === 'dark',
+        'hover:text-gray-800': this.$store.state.layout === 'default',
+        'hover:text-white': this.$store.state.layout === 'dark',
       }
     },
   },

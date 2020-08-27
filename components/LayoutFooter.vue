@@ -14,15 +14,15 @@ export default {
   computed: {
     layoutClasses() {
       return {
-        'bg-green-500': this.$root.layoutName === 'default',
-        'bg-gray-900': this.$root.layoutName === 'dark',
+        'bg-green-500': this.$store.state.layout === 'default',
+        'bg-gray-900': this.$store.state.layout === 'dark',
       }
     },
     layoutLinkClasses() {
       return {
-        'text-green-500': this.$root.layoutName === 'dark',
-        'text-white': this.$root.layoutName === 'default',
-        underline: this.$root.layoutName === 'default',
+        'text-green-500': this.$store.state.layout === 'dark',
+        'text-white': this.$store.state.layout === 'default',
+        underline: this.$store.state.layout === 'default',
       }
     },
   },

@@ -21,8 +21,8 @@ export default {
   computed: {
     layoutBorderColor() {
       return {
-        'border-white': this.$root.layoutName === 'dark',
-        'border-gray-900': this.$root.layoutName === 'default',
+        'border-white': this.$store.state.layout === 'dark',
+        'border-gray-900': this.$store.state.layout === 'default',
       }
     },
   },

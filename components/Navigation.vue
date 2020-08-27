@@ -2,13 +2,13 @@
   <nav
     class="flex items-center justify-between flex-wrap p-3"
     :class="{
-      'bg-gray-900': $root.layoutName === 'dark',
-      'bg-green-500': $root.layoutName !== 'dark',
+      'bg-gray-900': $store.state.layout === 'dark',
+      'bg-green-500': $store.state.layout !== 'dark',
     }"
   >
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <span class="text-white font-semibold text-xl tracking-tight">
-        <a class="focus:text-white" href="/">franc0rk</a>
+        <NuxtLink class="focus:text-white" to="/">franc0rk</NuxtLink>
       </span>
     </div>
     <div class="block lg:hidden">
@@ -29,27 +29,27 @@
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow"></div>
       <div v-show="openedMenu">
-        <a
-          href="/blog"
+        <NuxtLink
+          to="/blog"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
           :class="layoutLinkClasses"
         >
           Blog
-        </a>
-        <a
-          href="/resume"
+        </NuxtLink>
+        <NuxtLink
+          to="/resume"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
           :class="layoutLinkClasses"
         >
           Resume
-        </a>
-        <a
-          href="/portfolio"
+        </NuxtLink>
+        <NuxtLink
+          to="/portfolio"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-2"
           :class="layoutLinkClasses"
         >
           Portfolio
-        </a>
+        </NuxtLink>
         <a
           href="#"
           class="block text-center my-3 lg:inline-block lg:my-0 hover:text-white mx-4"
@@ -72,26 +72,26 @@ export default {
   computed: {
     layoutLinkClasses() {
       return {
-        'text-green-200': this.$root.layoutName === 'default',
-        'text-gray-200': this.$root.layoutName === 'dark',
+        'text-green-200': this.$store.state.layout === 'default',
+        'text-gray-200': this.$store.state.layout === 'dark',
       }
     },
   },
   mounted() {
     const layout = localStorage.getItem('layout')
-    this.$nuxt.setLayout(layout)
+    this.$store.commit('setLayout', layout)
     if (window.innerWidth >= 1024) {
       this.openedMenu = true
     }
   },
   methods: {
     toggleDarkMode() {
-      const layout = this.$root.layoutName
+      const layout = this.$store.state.layout
       if (layout === 'dark') {
-        this.$nuxt.setLayout('default')
+        this.$store.commit('setLayout', 'default')
         localStorage.setItem('layout', 'default')
       } else {
-        this.$nuxt.setLayout('dark')
+        this.$store.commit('setLayout', 'dark')
         localStorage.setItem('layout', 'dark')
       }
     },

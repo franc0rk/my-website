@@ -48,26 +48,26 @@ export default {
   computed: {
     layoutBgClasses() {
       return {
-        'bg-white': this.$root.layoutName === 'default',
-        'bg-gray-800': this.$root.layoutName === 'dark',
+        'bg-white': this.$store.state.layout === 'default',
+        'bg-gray-800': this.$store.state.layout === 'dark',
       }
     },
     layoutTextClasses() {
       return {
-        'text-white': this.$root.layoutName === 'dark',
-        'text-gray-900': this.$root.layoutName === 'default',
+        'text-white': this.$store.state.layout === 'dark',
+        'text-gray-900': this.$store.state.layout === 'default',
       }
     },
     layoutBtnClasses() {
       return {
-        'border-green-500': this.$root.layoutName === 'default',
-        'hover:bg-green-500': this.$root.layoutName === 'default',
-        'hover:text-white': this.$root.layoutName === 'default',
-        'text-green-700': this.$root.layoutName === 'default',
-        'border-white': this.$root.layoutName === 'dark',
-        'hover:bg-white': this.$root.layoutName === 'dark',
-        'hover:text-green-500': this.$root.layoutName === 'dark',
-        'text-white': this.$root.layoutName === 'dark',
+        'border-green-500': this.$store.state.layout === 'default',
+        'hover:bg-green-500': this.$store.state.layout === 'default',
+        'hover:text-white': this.$store.state.layout === 'default',
+        'text-green-700': this.$store.state.layout === 'default',
+        'border-white': this.$store.state.layout === 'dark',
+        'hover:bg-white': this.$store.state.layout === 'dark',
+        'hover:text-green-500': this.$store.state.layout === 'dark',
+        'text-white': this.$store.state.layout === 'dark',
       }
     },
   },
