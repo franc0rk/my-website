@@ -13,11 +13,11 @@
     </div>
     <div class="block lg:hidden">
       <button
-        class="flex items-center px-3 py-2 border rounded text-green-200 border-green-400 hover:text-white hover:border-white"
+        class="flex items-center px-3 py-2 border rounded text-green-200 border-green-400 hover:text-white hover:border-white focus:outline-none"
         @click="openedMenu = !openedMenu"
       >
         <svg
-          class="fill-current h-3 w-3"
+          class="fill-current h-3 w-3 focus:outline-none"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
         >
