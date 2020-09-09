@@ -106,14 +106,14 @@ export default {
   computed: {
     layoutBgClasses() {
       return {
-        'bg-white': this.$store.state.layout === 'default',
+        'bg-white': this.$store.state.layout !== 'dark',
         'bg-gray-800': this.$store.state.layout === 'dark',
       }
     },
     layoutTextClasses() {
       return {
         'text-white': this.$store.state.layout === 'dark',
-        'text-gray-900': this.$store.state.layout === 'default',
+        'text-gray-900': this.$store.state.layout !== 'dark',
       }
     },
     bgTags() {

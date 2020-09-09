@@ -48,22 +48,22 @@ export default {
   computed: {
     layoutBgClasses() {
       return {
-        'bg-white': this.$store.state.layout === 'default',
+        'bg-white': this.$store.state.layout !== 'dark',
         'bg-gray-800': this.$store.state.layout === 'dark',
       }
     },
     layoutTextClasses() {
       return {
         'text-white': this.$store.state.layout === 'dark',
-        'text-gray-900': this.$store.state.layout === 'default',
+        'text-gray-900': this.$store.state.layout !== 'dark',
       }
     },
     layoutBtnClasses() {
       return {
-        'border-green-500': this.$store.state.layout === 'default',
-        'hover:bg-green-500': this.$store.state.layout === 'default',
-        'hover:text-white': this.$store.state.layout === 'default',
-        'text-green-700': this.$store.state.layout === 'default',
+        'border-green-500': this.$store.state.layout !== 'dark',
+        'hover:bg-green-500': this.$store.state.layout !== 'dark',
+        'hover:text-white': this.$store.state.layout !== 'dark',
+        'text-green-700': this.$store.state.layout !== 'dark',
         'border-white': this.$store.state.layout === 'dark',
         'hover:bg-white': this.$store.state.layout === 'dark',
         'hover:text-green-500': this.$store.state.layout === 'dark',

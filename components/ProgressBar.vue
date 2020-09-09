@@ -22,7 +22,7 @@ export default {
     layoutBorderColor() {
       return {
         'border-white': this.$store.state.layout === 'dark',
-        'border-gray-900': this.$store.state.layout === 'default',
+        'border-gray-900': this.$store.state.layout !== 'dark',
       }
     },
   },

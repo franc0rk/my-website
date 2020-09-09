@@ -62,18 +62,18 @@ export default {
     layoutBgClasses() {
       return {
         'bg-gray-800': this.$store.state.layout === 'dark',
-        'bg-white': this.$store.state.layout === 'default',
+        'bg-white': this.$store.state.layout !== 'dark',
       }
     },
     layoutTextClasses() {
       return {
-        'text-gray-900': this.$store.state.layout === 'default',
+        'text-gray-900': this.$store.state.layout !== 'dark',
         'text-white': this.$store.state.layout === 'dark',
       }
     },
     layoutEmailClasses() {
       return {
-        'hover:text-gray-800': this.$store.state.layout === 'default',
+        'hover:text-gray-800': this.$store.state.layout !== 'dark',
         'hover:text-white': this.$store.state.layout === 'dark',
       }
     },

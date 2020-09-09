@@ -72,7 +72,7 @@ export default {
   computed: {
     layoutLinkClasses() {
       return {
-        'text-green-200': this.$store.state.layout === 'default',
+        'text-green-200': this.$store.state.layout !== 'dark',
         'text-gray-200': this.$store.state.layout === 'dark',
       }
     },
