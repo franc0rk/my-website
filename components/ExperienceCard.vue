@@ -34,7 +34,7 @@ export default {
         id: 1,
         name: 'Binnacle',
         position: 'Full-stack Developer',
-        period: 'July 2015 - July 2016',
+        period: 'Octuber 2018 - Current',
         tasks: [
           {
             id: 1,
