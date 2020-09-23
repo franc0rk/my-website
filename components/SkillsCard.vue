@@ -22,7 +22,7 @@
         </div>
         <div class="flex flex-wrap my-4">
           <div class="w-full lg:w-1/4">Angular</div>
-          <progress-bar progress="1/2" class="w-full lg:w-3/4" />
+          <progress-bar progress="2/3" class="w-full lg:w-3/4" />
         </div>
       </li>
       <li class="w-1/2 px-6">

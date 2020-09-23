@@ -1,8 +1,8 @@
 <template>
   <div v-if="!loading" :class="layoutGlobalBg">
-    <navigation />
+    <!-- <navigation /> -->
     <Nuxt />
-    <layout-footer />
+    <!-- <layout-footer /> -->
   </div>
   <div
     v-else

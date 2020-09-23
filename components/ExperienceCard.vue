@@ -34,7 +34,57 @@ export default {
         id: 1,
         name: 'Binnacle',
         position: 'Full-stack Developer',
-        period: 'Octuber 2018 - Current',
+        period: 'Octuber 2017- Current',
+        tasks: [
+          {
+            id: 1,
+            name:
+              'Binnacle project. A hybrid application for performing audits. Full-stack development(Vuejs and Laravel) and database support.',
+          },
+          {
+            id: 2,
+            name:
+              'Visbit project. A hybrid application for sales management. Full-stack development with Quasar, Vue and Laravel.',
+          },
+        ],
+        tools: [
+          'VueJs',
+          'Quasar',
+          'Laravel',
+          'MySQL',
+          'GraphQL',
+          'HTML',
+          'CSS',
+          'JS',
+          'SASS',
+          'Stylus',
+          'Sentry',
+          'Notion',
+          'PivotalTracker',
+        ],
+      },
+      {
+        id: 2,
+        name: 'Meditegic',
+        position: 'Frontend Developer',
+        period: 'June 2017 - September 2017',
+        tasks: [
+          {
+            id: 1,
+            name: 'Internal system frontend development',
+          },
+          {
+            id: 2,
+            name: 'UX/UI improves to internal system',
+          },
+        ],
+        tools: ['AngularJS(v1 and v2)', 'HTML', 'CSS', 'JS', 'JQuery'],
+      },
+      {
+        id: 3,
+        name: 'AS Diseño',
+        position: 'Web Developer',
+        period: 'July 2015 - July 2016',
         tasks: [
           {
             id: 1,
@@ -63,55 +113,6 @@ export default {
           'Wordpress',
           'Laravel',
           'MySQL',
-        ],
-      },
-      {
-        id: 2,
-        name: 'Meditegic',
-        position: 'Frontend Developer',
-        period: 'June 2017 - September 2017',
-        tasks: [
-          {
-            id: 1,
-            name: 'Internal system frontend development',
-          },
-          {
-            id: 2,
-            name: 'UX/UI improves to internal system',
-          },
-        ],
-        tools: ['AngularJS', 'HTML', 'CSS', 'JS', 'JQuery'],
-      },
-      {
-        id: 3,
-        name: 'AS Diseño',
-        position: 'Web Developer',
-        period: 'July 2015 - July 2016',
-        tasks: [
-          {
-            id: 1,
-            name:
-              'Binnacle project. A hybrid application for performing audits',
-          },
-          {
-            id: 2,
-            name: 'Visbit project. A hybrid application for sales management',
-          },
-        ],
-        tools: [
-          'VueJs',
-          'Quasar',
-          'Laravel',
-          'MySQL',
-          'GraphQL',
-          'HTML',
-          'CSS',
-          'JS',
-          'SASS',
-          'Stylus',
-          'Sentry',
-          'Notion',
-          'PivotalTracker',
         ],
       },
     ],
