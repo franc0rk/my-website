@@ -7,7 +7,6 @@
     <p class="text-lg text-center text-gray-600">
       Frontend Developer
       <br />
-      <small>(5 years of experience)</small>
     </p>
     <p
       v-if="showDescription"

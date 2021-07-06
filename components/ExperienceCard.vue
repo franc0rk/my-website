@@ -31,10 +31,35 @@ export default {
   data: () => ({
     jobs: [
       {
+        id: 0,
+        name: 'Epicor',
+        position: 'Product Developer',
+        period: 'Octuber 2020 - Current',
+        tasks: [
+          {
+            id: 1,
+            name:
+              'Maintenance to ERP and bug fixes',
+          },
+          {
+            id: 2,
+            name:
+              'ERP new features development',
+          },
+        ],
+        tools: [
+          'Angular',
+          'C#',
+          'SQL Server',
+          'Jira',
+          'SASS',
+        ],
+      },
+      {
         id: 1,
         name: 'Binnacle',
         position: 'Full-stack Developer',
-        period: 'Octuber 2017- Current',
+        period: 'Octuber 2017 - September 2020',
         tasks: [
           {
             id: 1,
