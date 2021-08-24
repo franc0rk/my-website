@@ -34,17 +34,17 @@ export default {
         id: 0,
         name: 'Epicor',
         position: 'Product Developer',
-        period: 'Octuber 2020 - Current',
+        period: 'October 2020 - Current',
         tasks: [
           {
             id: 1,
             name:
-              'Maintenance to ERP and bug fixes',
+              'Maintenance to ERP and bug fixes.',
           },
           {
             id: 2,
             name:
-              'ERP new features development',
+              'ERP new features development.',
           },
         ],
         tools: [
@@ -58,31 +58,42 @@ export default {
       {
         id: 1,
         name: 'Binnacle',
-        position: 'Full-stack Developer',
-        period: 'Octuber 2017 - September 2020',
+        position: 'Full-stack and RPA Developer',
+        period: 'October 2017 - September 2020',
         tasks: [
           {
             id: 1,
             name:
-              'Binnacle project. A hybrid application for performing audits. Full-stack development(Vuejs and Laravel) and database support.',
+              'Hybrid applications development.',
           },
           {
             id: 2,
+            name: 'Requirements analysis.',
+          },
+          {
+            id: 3,
             name:
-              'Visbit project. A hybrid application for sales management. Full-stack development with Quasar, Vue and Laravel.',
+              'Testing of entire applications using RPA tools.',
+          },
+          {
+            id: 3,
+            name:
+              'Project documentation.',
           },
         ],
         tools: [
           'VueJs',
-          'Quasar',
+          // 'Quasar',
           'Laravel',
+          'UIPath',
+          'Automation Anywhere',
           'MySQL',
-          'GraphQL',
-          'HTML',
-          'CSS',
-          'JS',
+          // 'GraphQL',
+          // 'HTML',
+          // 'CSS',
+          // 'JS',
           'SASS',
-          'Stylus',
+          // 'Stylus',
           'Sentry',
           'Notion',
           'PivotalTracker',
@@ -96,11 +107,11 @@ export default {
         tasks: [
           {
             id: 1,
-            name: 'Internal system frontend development',
+            name: 'Internal system frontend development.',
           },
           {
             id: 2,
-            name: 'UX/UI improves to internal system',
+            name: 'UX/UI improves to internal system.',
           },
         ],
         tools: ['AngularJS(v1 and v2)', 'HTML', 'CSS', 'JS', 'JQuery'],
@@ -113,19 +124,19 @@ export default {
         tasks: [
           {
             id: 1,
-            name: 'Internal system development',
+            name: 'Internal system development.',
           },
           {
             id: 2,
-            name: 'Websites development. Static and Dynamic Sites',
+            name: 'Websites development. Static and Dynamic Sites.',
           },
           {
             id: 3,
-            name: 'Web Applications development',
+            name: 'Web Applications development.',
           },
           {
             id: 4,
-            name: 'Web design',
+            name: 'Web design.',
           },
         ],
         tools: [
