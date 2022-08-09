@@ -32,9 +32,38 @@ export default {
     jobs: [
       {
         id: 0,
+        name: 'Globant',
+        position: 'Web UI Engineer',
+        period: 'October 2021 - Current',
+        tasks: [
+          {
+            id: 1,
+            name:
+              'Dell EMC marketplace project development',
+          },
+          {
+            id: 2,
+            name:
+              'App features development and bugfixing',
+          },
+          {
+            id: 3,
+            name:
+              'Implementing MFE architecture ',
+          },
+        ],
+        tools: [
+          'Angular',
+          'Bit.dev',
+          'Jira',
+          'SASS',
+        ],
+      },
+      {
+        id: 1,
         name: 'Epicor',
         position: 'Product Developer',
-        period: 'October 2020 - Current',
+        period: 'October 2020 - October 2021',
         tasks: [
           {
             id: 1,
@@ -56,9 +85,9 @@ export default {
         ],
       },
       {
-        id: 1,
+        id: 2,
         name: 'Binnacle',
-        position: 'Full-stack and RPA Developer',
+        position: 'Full-stack Developer',
         period: 'October 2017 - September 2020',
         tasks: [
           {
@@ -73,34 +102,29 @@ export default {
           {
             id: 3,
             name:
-              'Testing of entire applications using RPA tools.',
-          },
-          {
-            id: 3,
-            name:
-              'Project documentation.',
-          },
+              'Project documentation.'
+          }
         ],
         tools: [
           'VueJs',
-          // 'Quasar',
+          'Quasar',
           'Laravel',
-          'UIPath',
-          'Automation Anywhere',
+          // 'UIPath',
+          // 'Automation Anywhere',
           'MySQL',
           // 'GraphQL',
           // 'HTML',
           // 'CSS',
           // 'JS',
           'SASS',
-          // 'Stylus',
+          'Stylus',
           'Sentry',
           'Notion',
           'PivotalTracker',
         ],
       },
       {
-        id: 2,
+        id: 3,
         name: 'Meditegic',
         position: 'Frontend Developer',
         period: 'June 2017 - September 2017',
@@ -117,7 +141,7 @@ export default {
         tools: ['AngularJS(v1 and v2)', 'HTML', 'CSS', 'JS', 'JQuery'],
       },
       {
-        id: 3,
+        id: 4,
         name: 'AS Diseño',
         position: 'Web Developer',
         period: 'July 2015 - July 2016',

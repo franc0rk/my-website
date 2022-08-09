@@ -47,24 +47,6 @@
           - TOEFL ITP
         </a>
       </li>
-       <li>
-        <a
-          class="text-green-500"
-          :class="layoutEmailClasses"
-          href="/certifications/toefl.pdf"
-        >
-          - Bot Developer
-        </a>
-      </li>
-      <li>
-        <a
-          class="text-green-500"
-          :class="layoutEmailClasses"
-          href="/certifications/toefl.pdf"
-        >
-          - IQ Bot Developer
-        </a>
-      </li>
     </ul>
   </div>
 </template>

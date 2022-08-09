@@ -31,11 +31,11 @@
           <progress-bar progress="3/4" class="w-full lg:w-3/4" />
         </div>
         <div class="flex flex-wrap my-4">
-          <div class="w-full lg:w-1/4">Autom. Any</div>
-          <progress-bar progress="2/3" class="w-full lg:w-3/4" />
+          <div class="w-full lg:w-1/4">Solidity</div>
+          <progress-bar progress="1/2" class="w-full lg:w-3/4" />
         </div>
         <div class="flex flex-wrap my-4">
-          <div class="w-full lg:w-1/4">UiPath</div>
+          <div class="w-full lg:w-1/4">NodeJS</div>
           <progress-bar progress="1/2" class="w-full lg:w-3/4" />
         </div>
         <div class="flex flex-wrap my-4">
