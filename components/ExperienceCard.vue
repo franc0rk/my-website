@@ -57,6 +57,7 @@ export default {
           'Bit.dev',
           'Jira',
           'SASS',
+          'Miro'
         ],
       },
       {
